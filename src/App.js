@@ -1,24 +1,29 @@
-import logo from './logo.svg';
+import { Link, Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import HomePage from "./pages/HomePage/HomePage";
+import CharactersPage from "./pages/CharactersPage/CharactersPage";
+import ChronologyPage from "./pages/ChronologyPage/ChronologyPage"
+import HousesPage from "./pages/HousesPage/HousesPage"
+import DetailPage from "./pages/DetailPage/DetailPage"
+
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<HomePage/>} />
+        <Route path='/characters' element={<CharactersPage/>} />
+        <Route path='/chronology' element={<ChronologyPage/>} />
+        <Route path='/houses' element={<HousesPage/>} />
+        <Route path='/detail/:name' element={<DetailPage/>} />
+      </Routes>
+      <nav>
+        <Link to='/characters'>PERSONAJES</Link>      
+        <Link to='/houses'>CASAS</Link>      
+        <Link to='/chronology'>CRONOLOGIA</Link>      
+      </nav>
+    </Router> 
   );
 }
 
