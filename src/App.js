@@ -4,9 +4,7 @@ import CharactersPage from "./pages/CharactersPage/CharactersPage";
 import ChronologyPage from "./pages/ChronologyPage/ChronologyPage"
 import HousesPage from "./pages/HousesPage/HousesPage"
 import DetailPage from "./pages/DetailPage/DetailPage"
-
-
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
@@ -18,7 +16,7 @@ function App() {
         <Route path='/houses' element={<HousesPage/>} />
         <Route path='/detail/:name' element={<DetailPage/>} />
       </Routes>
-      <nav>
+      <nav className="c-nav">
         <Link to='/characters'>PERSONAJES</Link>      
         <Link to='/houses'>CASAS</Link>      
         <Link to='/chronology'>CRONOLOGIA</Link>      
