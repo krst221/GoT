@@ -1,0 +1,15 @@
+{
+    "nav": {
+        "characters": "PERSONAJES",
+        "houses": "CASAS",
+        "chrono": "CRONOLOGIA"
+    },
+    "detail": {
+        "house": "CASA",
+        "allegiances": "ALIANZAS",
+        "appearances": "APARICIONES",
+        "father": "PADRE",
+        "siblings": "HERMANOS",
+        "titles": "TITULOS"
+    }
+}

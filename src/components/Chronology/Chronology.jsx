@@ -5,7 +5,6 @@ import React, { useState, useEffect } from 'react'
 import ChronoElement from '../ChronoElement/ChronoElement'
 import './Chronology.scss'
 import vector from '../../assets/img/vector.png'
-import classNames from 'classnames'
 
 function Chronology(props) {
 
@@ -20,7 +19,6 @@ function Chronology(props) {
   const toggleOrder = () => {
     setCharacters([...characters.reverse()]);
      useFlip(!isFlip);
-     console.log(isFlip);
   };
 
   useEffect(() => {orderCharactersAsc()},[])

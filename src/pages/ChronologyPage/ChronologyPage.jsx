@@ -21,7 +21,6 @@ function ChronologyPage() {
       getCharacters()
     );
 
-
   }, []);
 
   return (
