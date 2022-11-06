@@ -35,17 +35,17 @@ function DetailPage() {
 
   return (
     <div className='c-detail'>
-    {(character.length < 1 && house[0] !== null) ? <Loading /> : <>
-    <DetailElement character={character} />
-      <div className='c-detail--details'>
-        <ImageColumn image={house.logoURL} title={t('detail.house')}/>
-        <TextColumn elements={character.allegiances} title={t('detail.allegiances')} />
-        <TextColumn elements={character.appearances} title={t('detail.appearances')} />
-        <TextColumn elements={character.father} title={t('detail.father')} />
-        <TextColumn elements={character.siblings} title={t('detail.siblings')} />
-        <TextColumn elements={character.titles} title={t('detail.titles')} />
-      </div>
-    </>}
+      {(character.length < 1 && house[0] !== null) ? <Loading /> : <>
+      <DetailElement character={character} />
+        <div className='c-detail--details'>
+          <ImageColumn image={house.logoURL} title={t('detail.house')}/>
+          <TextColumn elements={character.allegiances} title={t('detail.allegiances')} />
+          <TextColumn elements={character.appearances} title={t('detail.appearances')} />
+          <TextColumn elements={character.father} title={t('detail.father')} />
+          <TextColumn elements={character.siblings} title={t('detail.siblings')} />
+          <TextColumn elements={character.titles} title={t('detail.titles')} />
+        </div>
+      </>}
     </div>
   )
 }
