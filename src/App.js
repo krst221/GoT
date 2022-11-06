@@ -4,7 +4,8 @@ import HomePage from "./pages/HomePage/HomePage";
 import CharactersPage from "./pages/CharactersPage/CharactersPage";
 import ChronologyPage from "./pages/ChronologyPage/ChronologyPage";
 import HousesPage from "./pages/HousesPage/HousesPage";
-import DetailPage from "./pages/DetailPage/DetailPage";
+import CharacterDetailPage from "./pages/CharacterDetailPage/CharacterDetailPage";
+import HouseDetailPage from "./pages/HouseDetailPage/HouseDetailPage";
 import { useTranslation } from "react-i18next";
 
 import './App.scss';
@@ -21,7 +22,8 @@ function App() {
         <Route path='/characters' element={<CharactersPage/>} />
         <Route path='/chronology' element={<ChronologyPage/>} />
         <Route path='/houses' element={<HousesPage/>} />
-        <Route path='/detail/' element={<DetailPage/>} />
+        <Route path='/characters/detail/:name' element={<CharacterDetailPage/>} />
+        <Route path='/houses/detail/:name' element={<HouseDetailPage/>} />
       </Routes>
       <nav className="c-nav">
         <Link to='/characters'>{t('nav.characters')}</Link>

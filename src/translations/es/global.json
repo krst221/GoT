@@ -4,12 +4,28 @@
         "houses": "CASAS",
         "chrono": "CRONOLOGIA"
     },
-    "detail": {
+
+
+    "return": "Volver",
+
+    "detailc": {
         "house": "CASA",
         "allegiances": "ALIANZAS",
         "appearances": "APARICIONES",
         "father": "PADRE",
         "siblings": "HERMANOS",
-        "titles": "TITULOS"
+        "titles": "TITULOS",
+        "religion": "RELIGION"
+    },
+
+    
+    "detailh": {
+        "words": "LEMA",
+        "seat": "SEDE",
+        "region": "REGION",
+        "allegiance": "ALIANZAS",
+        "religion": "RELIGIONES",
+        "createdAt": "FUNDACION"
     }
+
 }

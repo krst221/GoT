@@ -3,7 +3,6 @@ import './TextColumn.scss'
 
 function TextColumn({title, elements}) {
 
-  console.log(elements);
   return (
     <div className='c-textc'>
       <h2>{title}</h2>
