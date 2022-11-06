@@ -1,6 +1,20 @@
-.App {
+html {
   text-align: center;
+  scroll-behavior: smooth;
+  background-color: black;
+  color: white;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+@font-face {
+  font-family: GoT;
+  src: url(./assets/fonts/got.ttf);
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +49,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.c-nav {
+  font-family: got;
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 20px auto;
+  font-size: 24px;
+  background-color: transparent;
 }
