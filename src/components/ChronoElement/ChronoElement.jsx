@@ -20,7 +20,7 @@ function ChronoElement({character, index}) {
       })}>
         <span>{age.age}</span>
         <h2>{age.name}</h2>
-        <img src={character.image} onClick={() => navigate(`/characters/detail/${age.name}`)} alt='' />
+        <img src={character.image} onClick={() => navigate(`/characters/${age.name}`)} alt='' />
       </div>
 
   )
