@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import './HomePage.scss'
 
-function HomePage() {
+
+export const HomePage = () => {
   return (
-    <div>HomePage</div>
-  )
-}
 
-export default HomePage
+    <main className="main__container">
+      <h1 className="b-home__title">GAMES OF THRONES</h1>
+    </main>
+  );
+};
+
+export default HomePage;

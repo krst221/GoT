@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { Link, Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import { NavLink, Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import CharactersPage from "./pages/CharactersPage/CharactersPage";
 import ChronologyPage from "./pages/ChronologyPage/ChronologyPage";
@@ -26,9 +26,12 @@ function App() {
         <Route path='/houses/detail/:name' element={<HouseDetailPage/>} />
       </Routes>
       <nav className="c-nav">
-        <Link to='/characters'>{t('nav.characters')}</Link>
-        <Link to='/houses'>{t('nav.houses')}</Link>      
-        <Link to='/chronology'>{t('nav.chrono')}</Link>      
+        <NavLink   className={({ isActive }) =>
+            isActive ? " nav-item__active" : "nav__item"} to='/characters'>{t('nav.characters')}</NavLink>
+        <NavLink className={({ isActive }) =>
+            isActive ? " nav-item__active" : "nav__item"} to='/houses'>{t('nav.houses')}</NavLink>      
+        <NavLink className={({ isActive }) =>
+            isActive ? " nav-item__active" : "nav__item"} to='/chronology'>{t('nav.chrono')}</NavLink>      
       </nav>
     </Router> 
   );

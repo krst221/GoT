@@ -20,7 +20,6 @@ function CharacterDetailPage() {
   const [t, i18n] = useTranslation('global');
   const [character, setCharacter] = useState([]);
   const [house, setHouse] = useState([]);
-  const json = new Date().toJSON();
 
   useEffect(() => {
     const getCharacter = async () => {
