@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import group from '../../assets/img/Group.png'
-import './Languages.scss';
+import './IconHome.scss';
 import {NavLink } from 'react-router-dom';
 
 function IconHome() {

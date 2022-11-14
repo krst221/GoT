@@ -7,9 +7,9 @@ import HousesPage from "./pages/HousesPage/HousesPage";
 import CharacterDetailPage from "./pages/CharacterDetailPage/CharacterDetailPage";
 import HouseDetailPage from "./pages/HouseDetailPage/HouseDetailPage";
 import { useTranslation } from "react-i18next";
-
 import './App.scss';
 import Languages from "./components/Languages/Languages";
+import IconHome from "./components/IconHome/IconHome";
 import { useEffect } from "react";
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
   
   return (
     <Router>
-      <Languages />
+    <div className='c-icons'><IconHome /><Languages /></div>
       <Routes>
         <Route path='/' element={<HomePage/>} />
         <Route path='/characters' element={<CharactersPage/>} />

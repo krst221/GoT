@@ -15,6 +15,13 @@ a {
   src: url(./assets/fonts/got.ttf);
 }
 
+.c-icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 85vw;
+  width: 10vw;
+}
+
 .main__container{
   display: flex;
   align-items: center;
@@ -98,29 +105,37 @@ a {
 
 @media screen and (min-width: 1440px){
   .c-nav{
-    font-size: 60px;
+    font-size: 50px;
   }
-  .b-home__title{font-size: 176px;}
+  .b-home__title{
+    font-size: 176px;
+  }
 }
 
 @media screen and (max-width: 1440px){
   .c-nav{
-    font-size: 50px;
+    font-size: 40px;
   }
-  .b-home__title{font-size: 150px;}
+  .b-home__title{
+    font-size: 150px;
+  }
 }
 
 @media screen and (max-width: 1100px){
   .c-nav{
-    font-size: 40px;
+    font-size: 30px;
   }
-  .b-home__title{font-size: 130px;}
+  .b-home__title{
+    font-size: 130px;
+  }
 }
 
 @media screen and (max-width: 820px){
   .c-nav{
     font-size: 20px;
   }
-  .b-home__title{font-size: 110px;}
+  .b-home__title{
+    font-size: 110px;
+  }
 
 }
