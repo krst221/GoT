@@ -39,7 +39,7 @@ export const HousesPage = () => {
     <>
     <HousesSearcher setSearch={searchHouses}/>
     <main className="home__container noimage__container">
-    <SimpleBar autoHide={false} className='c-scroll-characters' style={{ maxHeight: 500 }}>
+    <SimpleBar autoHide={false} className='c-scroll-characters'>
       <div className="houses-gallery__container">
         {housesView.length < 1 ? <Loading/> :
           housesView.map((house) => (

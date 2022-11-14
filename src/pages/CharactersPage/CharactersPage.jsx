@@ -41,7 +41,7 @@ const CharactersPage = () => {
     <>
       <SearcherCharacters setSearch={searchCharacters} />
       <main className="home__container noimage__container">
-      <SimpleBar autoHide={false} className='c-scroll-characters' style={{ maxHeight: 500 }}>
+      <SimpleBar autoHide={false} className='c-scroll-characters'>
         <div className="character-gallery__container">
           {charactersView.length < 1 ? <Loading/> :
             charactersView.map((character) => (

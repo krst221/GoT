@@ -90,9 +90,32 @@ a {
   justify-content: space-around;
   width: calc(100% - 103px);
   margin: 20px 0;
-  font-size: 40px;
   background-color: transparent;
   position: fixed;
   bottom: 10px;
   left: 30px;
+}
+
+@media screen and (min-width: 1440px){
+  .c-nav{
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 1440px){
+  .c-nav{
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 1100px){
+  .c-nav{
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 820px){
+  .c-nav{
+    font-size: 20px;
+  }
 }

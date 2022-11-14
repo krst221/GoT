@@ -4,8 +4,31 @@
     gap: 30px; 
     padding: 0 10%;
     justify-content: center;
-    max-height: calc(100vh - 104px - 118px);
 }
+
+@media screen and (min-height: 900px){
+    .c-scroll-characters{
+        height: 75vh;
+    }
+  }
+
+  @media screen and (max-height: 900px){
+    .c-scroll-characters{
+        height: 70vh;
+    }
+  }
+
+  @media screen and (max-height: 720px){
+    .c-scroll-characters{
+        height: 62vh;
+    }
+  }
+
+  @media screen and (min-height: 550px){
+    .c-scroll-characters{
+        height: 53vh;
+    }
+  }
 
 .c-scroll-characters {
     width: calc(100vw - 20px);
