@@ -1,8 +1,7 @@
 .b-house__card{
-    
+    cursor: pointer;
     height: 450px;
     width: 350px;
-    gap: 30px;
     
 }
 
@@ -18,6 +17,6 @@
 
 .b-house__image{
     object-fit: cover;
-    height: 450px;
+    height: 400px;
     width: 350px;
 }
