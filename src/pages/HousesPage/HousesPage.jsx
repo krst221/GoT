@@ -6,6 +6,8 @@ import HousesGallery from "../../components/HousesGallery/HousesGallery";
 import "./HousesPage.scss";
 import { HousesSearcher } from "../../components/HousesSearcher/HousesSearcher";
 import Loading from "../../components/Loading/Loading";
+import SimpleBar from 'simplebar-react';
+import 'simplebar-react/dist/simplebar.min.css'
 
 export const HousesPage = () => {
   const [houses, setHouses] = useState([]);
@@ -37,13 +39,14 @@ export const HousesPage = () => {
     <>
     <HousesSearcher setSearch={searchHouses}/>
     <main className="home__container noimage__container">
+    <SimpleBar autoHide={false} className='c-scroll-characters' style={{ maxHeight: 500 }}>
       <div className="houses-gallery__container">
         {housesView.length < 1 ? <Loading/> :
           housesView.map((house) => (
             <HousesGallery key={house._id} house={house} />
           ))}
-          
       </div>
+      </SimpleBar>  
     </main>
     </>
   );
