@@ -87,10 +87,10 @@ a {
 .c-nav {
   font-family: got;
   display: flex;
-  justify-content: space-between;
-  width: calc(100% - 60px);
+  justify-content: space-around;
+  width: calc(100% - 103px);
   margin: 20px 0;
-  font-size: 24px;
+  font-size: 40px;
   background-color: transparent;
   position: fixed;
   bottom: 10px;
