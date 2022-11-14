@@ -31,7 +31,7 @@ function App() {
         <Route path='/houses/:name' element={<HouseDetailPage/>} />
       </Routes>
       <nav className="c-nav">
-        <NavLink   className={({ isActive }) =>
+        <NavLink className={({ isActive }) =>
             isActive ? " nav-item__active" : "nav__item"} to='/characters'>{t('nav.characters')}</NavLink>
         <NavLink className={({ isActive }) =>
             isActive ? " nav-item__active" : "nav__item"} to='/houses'>{t('nav.houses')}</NavLink>      
