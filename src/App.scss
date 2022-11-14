@@ -55,8 +55,10 @@ a {
   font-family: got;
   display: flex;
   justify-content: space-between;
-  width: 85%;
-  margin: 20px auto;
+  width: 96%;
   font-size: 24px;
   background-color: transparent;
+  position: fixed;
+  bottom: 0;
+  padding: 30px;
 }

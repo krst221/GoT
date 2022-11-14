@@ -3,8 +3,11 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    overflow: scroll;
-    width: 1000px;
+}
+
+.c-scroll {
+    width: 48vw;
+    height: 100vh;
 }
 
 .c-toggle {
@@ -24,4 +27,9 @@
 .flip {
     -webkit-transform: scaleY(-1);
     transform: scaleY(-1);
+}
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+    background-color: white;
+    width: 9px;
 }
