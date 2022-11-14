@@ -10,9 +10,14 @@ import { useTranslation } from "react-i18next";
 
 import './App.scss';
 import Languages from "./components/Languages/Languages";
+import { useEffect } from "react";
 
 function App() {
   const [t, i18n] = useTranslation('global');
+
+  useEffect(() => {
+    document.title = 'Game of Thrones';
+  });
   
   return (
     <Router>
@@ -22,8 +27,8 @@ function App() {
         <Route path='/characters' element={<CharactersPage/>} />
         <Route path='/chronology' element={<ChronologyPage/>} />
         <Route path='/houses' element={<HousesPage/>} />
-        <Route path='/characters/detail/:name' element={<CharacterDetailPage/>} />
-        <Route path='/houses/detail/:name' element={<HouseDetailPage/>} />
+        <Route path='/characters/:name' element={<CharacterDetailPage/>} />
+        <Route path='/houses/:name' element={<HouseDetailPage/>} />
       </Routes>
       <nav className="c-nav">
         <NavLink   className={({ isActive }) =>

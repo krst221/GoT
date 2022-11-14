@@ -6,7 +6,7 @@ function ImageColumn({house, title}) {
     return (
       <div className='c-imgc'>
         <h2>{title}</h2>
-        <Link to={`/houses/detail/${house.name}`}>{house.logoURL ? <img src={house.logoURL} alt='' /> : <p>{house.name}</p>}</Link>
+        <Link to={`/houses/${house.name}`}>{house.logoURL ? <img src={house.logoURL} alt='' /> : <p>{house.name}</p>}</Link>
       </div>
     )
 }

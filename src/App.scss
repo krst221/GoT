@@ -87,17 +87,9 @@ a {
 .c-nav {
   font-family: got;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 35px 0px;
-  font-size: 40px;
-  z-index: 2;
-}
-
-.all-container{
-  position: relative;
-  width: 100%;
+  justify-content: space-between;
+  width: 85%;
+  margin: 20px auto;
+  font-size: 24px;
+  background-color: transparent;
 }
