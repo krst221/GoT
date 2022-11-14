@@ -21,7 +21,10 @@ function Chronology(props) {
      useFlip(!isFlip);
   };
 
-  useEffect(() => {orderCharactersAsc()},[])
+  useEffect(() => {
+    orderCharactersAsc();
+    setCharacters([...characters.filter(character => character.age.age < 99)]);
+  },[])
 
   return (
     <>
