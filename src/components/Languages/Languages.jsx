@@ -6,7 +6,6 @@ import es from '../../assets/img/es.png';
 import group from '../../assets/img/Group.png'
 import './Languages.scss';
 import { BrowserRouter, NavLink } from 'react-router-dom';
-import HomePage from '../../pages/HomePage/HomePage';
 
 function Languages() {
 
