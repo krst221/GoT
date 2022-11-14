@@ -9,11 +9,11 @@ const {age} = character
 
   return (
     <div className='b-father__characters'>
-      <div className='b-character__card'>
-          <img src={character.image} alt='' onClick={() => navigate(`/characters/detail/${age.name}`)}/>
-      </div>
-      <div className='b-character-container'>
+      <div className='b-character__card' onClick={() => navigate(`/characters/${age.name}`)}>
+          <img src={character.image} alt=''/>
+          <div className='b-character-container'>
           <h2 className='b-character-name'>{character.name}</h2>
+      </div>
       </div>
     </div>
     

@@ -5,6 +5,10 @@
     padding: 0 10%;
     justify-content: center;
     max-height: calc(100vh - 104px - 118px);
-    overflow: scroll;
-    overflow-x: hidden;
+}
+
+.c-scroll-characters {
+    width: calc(100vw - 20px);
+    height: 60vh;
+    margin-bottom: 50px;
 }

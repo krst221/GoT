@@ -7,7 +7,7 @@ const HousesGallery = ({house}) => {
 
   return (
       <div className='b-house__card'>
-        <img className='b-house__image' src={house.logoURL} onClick={()=> navigate(`/houses/detail/${house.name}`)} alt=''/>
+        <img className='b-house__image' src={house.logoURL} onClick={()=> navigate(`/houses/${house.name}`)} alt=''/>
         <h2 className='b-house__name'>{house.name}</h2>
       </div>
   )

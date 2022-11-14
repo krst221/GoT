@@ -6,6 +6,8 @@ import CharacterGallery from "../../components/CharacterGallery/CharacterGallery
 import "./CharactersPage.scss";
 import { SearcherCharacters } from "../../components/SearcherCharacters/SearcherCharacters";
 import Loading from "../../components/Loading/Loading";
+import SimpleBar from 'simplebar-react';
+import 'simplebar-react/dist/simplebar.min.css'
 
 const CharactersPage = () => {
   const [characters, setCharacters] = useState([]);
@@ -39,6 +41,7 @@ const CharactersPage = () => {
     <>
       <SearcherCharacters setSearch={searchCharacters} />
       <main className="home__container noimage__container">
+      <SimpleBar autoHide={false} className='c-scroll-characters' style={{ maxHeight: 500 }}>
         <div className="character-gallery__container">
           {charactersView.length < 1 ? <Loading/> :
             charactersView.map((character) => (
@@ -49,7 +52,8 @@ const CharactersPage = () => {
               />
             ))}
         </div>
-      </main>
+        </SimpleBar>      
+        </main>
     </>
   );
 };
