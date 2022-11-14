@@ -10,6 +10,7 @@ import axios from 'axios';
 import './HouseDetailPage.scss';
 import { useParams, useNavigate  } from 'react-router-dom';
 import vector from '../../assets/img/vector.png';
+import stark from '../../assets/img/stark.webp';
 
 function HouseDetailPage() {
   
@@ -35,11 +36,11 @@ function HouseDetailPage() {
       <div className='c-back'><img src={vector} alt='' onClick={() => navigate(-1)}/><p>{t('return')}</p></div>
       <div className='c-detail'>
         {house.length < 1 ? <Loading /> : <>
-        <DetailElement character={house[0]} image={house[0].logoURL} />
+        <DetailElement character={house[0]} image={house[0].logoURL ? house[0].logoURL : stark } />
           <div className='c-detail--details'>
             {house[0].words ? <TextColumn elements={house[0].words} title={t('detailh.words')} /> : ''}
             {house[0].seat.length > 1 ? <TextColumn elements={house[0].seat} title={t('detailh.seat')} /> : ''}
-            {house[0].region ? <TextColumn elements={house[0].region} title={t('detailh.region')} /> : ''}
+            {house[0].region.length > 1 ? <TextColumn elements={house[0].region} title={t('detailh.region')} /> : ''}
             {house[0].allegiance.length > 1 ? <TextColumn elements={house[0].allegiance} title={t('detailh.allegiance')} /> : ''}
             {house[0].religion[0] ? <TextColumn elements={house[0].religion} title={t('detailh.religion')} /> : ''}
             {house[0].createdAt ? <TextColumn elements={(new Date(house[0].createdAt).getDay()+21) + '/' + (new Date(house[0].createdAt).getMonth()+1) + '/' + new Date(house[0].createdAt).getUTCFullYear()} title={t('detailh.createdAt')}/> : ''}
