@@ -24,9 +24,9 @@ function ChronologyPage() {
   }, []);
 
   return (
-    <div className='c-chronology'>
-      {characters.length < 1 ? <Loading /> : <Chronology characters={characters.filter(character => character.age.age)}/>}
-    </div>
+      <div className='c-chronology'>
+        {characters.length < 1 ? <Loading /> : <Chronology characters={characters.filter(character => character.age.age)}/>}
+      </div>
   )
 }
 

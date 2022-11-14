@@ -3,6 +3,8 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, { useState, useEffect } from 'react'
 import ChronoElement from '../ChronoElement/ChronoElement'
+import SimpleBar from 'simplebar-react';
+import 'simplebar-react/dist/simplebar.min.css'
 import './Chronology.scss'
 import vector from '../../assets/img/vector.png'
 
@@ -30,14 +32,15 @@ function Chronology(props) {
     <>
       <div className='c-toggle' onClick={toggleOrder}>{age = characters[0].age.age}</div>
       <img src={vector} alt='' className={isFlip ? 'flip' : ''} />
-      <div className='c-chrono'>
-      {characters.map((character, index) => {
-        return (
-            <ChronoElement character={character} index={index} key={character._id} />
-
-        );
-      })}
-      </div>
+      <SimpleBar autoHide={false} className='c-scroll' style={{ maxHeight: 500 }}>
+        <div className='c-chrono'>
+            {characters.map((character, index) => {
+              return (
+                  <ChronoElement character={character} index={index} key={character._id} />
+              );
+            })}
+        </div>
+        </SimpleBar>
     </>
   )
 }
