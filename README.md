@@ -29,7 +29,7 @@ Se incluye el mismo header que en la página principal con los botones Home y de
 
 Parecida a la página de personajes, aquí se muestran todas las casas aunque el nombre ya se muesta por defecto. Debido a que la API está descontinuada, nos encontramos con dos conflictos con las imágenes:
 
-- Directamente la casa no tiene imagen, en cuyo caso se añade el emblema de la casa Stark como place holder.
+- Directamente la casa no tiene imagen, en cuyo caso se añade el emblema de la casa Stark como placeholder.
 - La casa tiene imagen pero aparece como una imagen genérica, en cuyo caso simplemente se muesta centrada. Todas las imagenes 'corruptas' tienen una URL diferente, de manera que no se puede automatizar el reemplazarla por otra imagen como la de la casa Stark.
 
 También se incluye una barra de búsqueda por nombre y los botones Home y cambio de idioma.
