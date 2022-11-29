@@ -49,4 +49,4 @@ Al hacer click en la imagen de cada personaje nos lleva al respectivo detalle de
 
 ## Contrbuciones
 
-@AlexProcessDev por ayudarme con el proyecto, y encargarse de la página de personajes y casas.
+@AlexProcessDev por ayudarme con el proyecto, y encargarse de las páginas de personajes y casas.
