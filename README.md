@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Game of Thrones
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Proyecto grupal realizado en React sobre la serie Game of Thrones, atacando a una API con información sobre los personajes y casas.
 
-## Available Scripts
+## Contenido
 
-In the project directory, you can run:
+### Home
 
-### `npm start`
+Página principal donde se nos muestan las diferentes páginas del proyecto: Personajes, Casas y Cronología, junto a dos banderas para cambiar el idioma de la página (Los datos vienen en inglés desde la API, pero se puede cambiar el idioma de todas las cabeceras entre Inglés y Español).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Personajes
 
-### `npm test`
+Aquí se muestran todos los personajes de la serie ordenados por familias.
+Al hacer hover sobre cada personaje se puede ver el nombre, y al hacer click en cada uno te lleva al detalle de personaje. Disponemos además de una barra de búsqueda para filtrar los personajes por nombre o apellido.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Se incluye también un botón Home (presente en todos los endpoints menos el Home mismo) además de las banderas para cambiar de idioma.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Detalle de personaje
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+En esta página nos encontramos con información adicional del personaje proporcionada con la API (no siempre son los mismos campos, si algún campo no contiene datos no se muestra), tales como las alianzas, episodios en los que aparece, títulos, familiares.. Si además el personaje dispone de casa, al hacer click en la imágen ésta nos lleva al detalle de la respectiva casa.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Se incluye el mismo header que en la página principal con los botones Home y de idioma, además de en éste caso de una flecha para volver a la página anterior.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Casas
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Parecida a la página de personajes, aquí se muestran todas las casas aunque el nombre ya se muesta por defecto. Debido a que la API está descontinuada, nos encontramos con dos conflictos con las imágenes:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Directamente la casa no tiene imagen, en cuyo caso se añade el emblema de la casa Stark como place holder.
+- La casa tiene imagen pero aparece como una imagen genérica, en cuyo caso simplemente se muesta centrada. Todas las imagenes 'corruptas' tienen una URL diferente, de manera que no se puede automatizar el reemplazarla por otra imagen como la de la casa Stark.
 
-## Learn More
+También se incluye una barra de búsqueda por nombre y los botones Home y cambio de idioma.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Detalle de casa
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Página muy similar a la de detalle de personajes, en éste caso como campo adicional se incluye la fecha de fundación proporcionada por la API, convertida a formato DD/MM/YYYY.
 
-### Code Splitting
+### Cronología
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Aquí se muestra una especie de árbol con todos los personajes ordenados por edad, mostrando su edad, el nombre y su imagen (el filtro por defecto es ascendiente, mostrándose primero el personaje más joven). Los personajes que no tienen la edad definida en la API o tienen u valor erróneo (hay un personaje que tiene 2016 años según la API) se han eliminado de la lista.
 
-### Analyzing the Bundle Size
+Arriba de todo aparece una flecha cuya dirección indica el sentido al que las edades aumentan, y un número con la edad del personaje mayor/más joven. Al hacer click en el número se invierte el sentido del árbol, la dirección de la flecha y el número que aparece arriba del todo, funcionando éste como toggle.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Al hacer click en la imagen de cada personaje nos lleva al respectivo detalle de personaje.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contrbuciones
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+@AlexProcessDev por ayudarme con el proyecto, y encargarse de la página de personajes y casas.
